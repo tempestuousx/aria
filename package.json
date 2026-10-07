@@ -1,0 +1,15 @@
+{
+  "name": "aria-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aria: interactive comic book website (static, no runtime dependencies)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "check": "node scripts/build.mjs && node scripts/check.mjs",
+    "images": "python3 -I scripts/prepare-images.py .. public/img"
+  },
+  "engines": { "node": ">=18" }
+}
